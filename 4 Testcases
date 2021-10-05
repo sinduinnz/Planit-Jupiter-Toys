@@ -49,10 +49,10 @@ public class Testcase {
 		// Instantiate Actions Class.
 		Actions actions = new Actions(driver);
 
-		// Explicit Wait on kiwisaver WebElement.
-		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@id='ubermenu-section-link-kiwisaver-ps']")));
-		// Retrieve kiwisaver WebElement
-		WebElement kiwiSaver = driver.findElement(By.xpath("//a[@id='ubermenu-section-link-kiwisaver-ps']"));
+		// Explicit Wait on Contact WebElement.
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@href='#/contact']")));
+		// Retrieve Contact WebElement
+		WebElement kiwiSaver = driver.findElement(By.xpath("//a[@href='#/contact']")));
 
 		// Mousehover on Kiwisaver webelement on WestPac Main Page.
 		actions.moveToElement(kiwiSaver).perform();
